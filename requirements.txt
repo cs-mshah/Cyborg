@@ -10,3 +10,4 @@ six==1.15.0
 tornado==6.1
 tzlocal==2.1
 wincertstore==0.2
+tensorflow
