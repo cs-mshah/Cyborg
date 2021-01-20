@@ -36,6 +36,16 @@ intents = {
       ]
     },
     {
+      "tag": "name",
+      "patterns": ["Do you have a name ? ", "What is your name ?", "what do I call you?", "Who are you ?"],
+      "responses": ["Its my pleasure that you want to know about me , My name is Cyborg"]
+    },
+    {
+      "tag": "age",
+      "patterns": ["age?", "how old is Cyborg", "How old are you ? ", "What is your age ?", "when were you created?", "In which year were you created ?","When were you born?", "When is your birthday?"],
+      "responses": ["I was created in January 2021. I hope to stay immortal!!"]
+    },
+    {
       "tag": "thanks",
       "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
       "responses": ["Happy to help!", "Any time!", "My pleasure"]
@@ -53,14 +63,32 @@ intents = {
       ]
     },
     {
+      "tag": "feeling",
+      "patterns": ["How are you feeling?", "How are you?", "Are you fine?", "Are you alive?"],
+      "responses": ["I am an AI , I dont have feelings , Thank you for your concern"]
+    },
+    {
       "tag": "girls",
       "patterns": [
-        "Is there any special incentive given to girl students?",
-        "whats special for girls?",
-        "Is there any scholarship for girl students?"
+        "Is there any special incentive given to girl or female students?",
+        "whats special for girls?","whats special for female students?",
+        "Is there any scholarship for girl students?","girl","female"
       ],
       "responses": [
         "YES! If you are admitted to IIT Mandi, you will get a merit scholarship including full tuition fee waiver and Rs. 1,000/- per month stipend in the first year irrespective of category and parent’s income. This merit scholarship will continue for all 4 years of B.Tech. subject to good academic performance of the candidate indicated by a minimum SGPA criteria of 7.0 for the previous two semesters and no disciplinary action."
+      ]
+    },
+    {
+      "tag": "IIT Mandi perception",
+      "patterns": [
+        "What is the best part of iit mandi?",
+        "What do you like about iit mandi?",
+        "What can I expect from iit mandi?",
+        "Why should I joinn IIT Mandi ?"
+            
+      ],
+      "responses": [
+        "IIT Mandi is a great place for growth and making memories worth remembering. It feels great to be in IIT Mandi, the pollution free environment, the splendid  beauty of the valley adds a great impact on overall experience. The college is improving after each year with really appreciable academics curriculum and career opportunities.  "
       ]
     },
     {
@@ -72,14 +100,14 @@ intents = {
       ],
       "responses": [
         "The freshers will be accommodated at North Campus, Kamand.",
-        "North Campus"
+        "North Campus" , 
       ]
     },
     {
       "tag": "campus development",
       "patterns": [
         "How developed is the IIT Mandi campus at Kamand?",
-        "Is the campus developed?"
+        "Is the campus developed?","Is development still underway?"
       ],
       "responses": [
         "Phase 1 construction of the south campus is complete and the north campus is expected to complete in 2021."
@@ -90,7 +118,7 @@ intents = {
       "patterns": [
         "How's the weather at IIT Mandi?",
         "How is the weather in Kamand like?",
-        "Weather?"
+        "Weather?","weather"
       ],
       "responses": [
         "Weather becomes chilly after mid-October, and in winter, there is the occasional snowfall, especially in the mountains above Kamand. But in general, we have long winter vacations from early December till mid-February to keep the cold at bay. The weather is usually pleasant, especially in the evenings and is ideal for nature enthusiasts who want to explore the serene surroundings of IIT Mandi."
@@ -102,7 +130,7 @@ intents = {
         "How easy is the branch change in IIT Mandi?",
         "What is the branch change policy?",
         "How can I change my branch?",
-        "Branch change policy"
+        "branch change","What is cutoff to get into CSE","Cutoff to get in particular branch"
       ],
       "responses": [
         "kindly have a look at the link below: http://iitmandi.ac.in/academics/branch_change.php"
@@ -119,6 +147,18 @@ intents = {
         "details can be found here: http://iitmandi.ac.in/academics/scholarship.php"
       ]
     },
+    {"tag":"group" ,
+     "patterns":["Is there a whatsapp group for frehsers ?" , "Is there a telegram group ?", "Is there a discord group ?","Is there way to talk to other freshers or seniors ?","How to communicate with other freshers ?" , "How to get in touch with other students ?"],
+     "responses":["No , there is no official group for freshers . To get in touch with your mates you can join the freshers group of IIT Mandi on facebook"]},
+     
+    {"tag" : "clubs",
+                        "patterns" : ["how many clubs are there in iit mandi",
+                                      "clubs at college", "clubs in iit mandi",
+                                      "is there a painting club at iit mandi","is there a dancing club at iit mandi",
+                                      "is there a debating club at iit mandi", "is there a hiking and trekking club at iit mandi",
+                                      "what clubs are there in iit mandi"],
+                        "responses" : ["IIT Mandi has various clubs like Dancing club, Painting club ,programming club, Writing club, Music club, etc.At IIT Mandi each student is allowed to join any number of clubs either to learn something or to teach something. To know what clubs IIT Mandi has visit : 'https://wiki.iitmandi.co.in/p/List_of_Societies_and_Clubs'."],
+},
     {
       "tag": "courses",
       "patterns": [
@@ -134,19 +174,27 @@ intents = {
       "tag": "Laptops",
       "patterns": [
         "Can freshers bring laptops in the first sem?",
-        "Are laptops allowed?",
-        "Which laptops should we buy?"
+        "Are laptops allowed?"
       ],
       "responses": [
-        "Yes. There is no restriction in bringing a laptop to the Institute when you join. It would be better if you had a laptop"
+        "Yes. There is no restriction in bringing a laptop to the Institute when you join. It would be better if you have a laptop"
       ]
+    },
+    {
+      "tag": "Laptop",
+      "patterns": [
+        "Recommended laptops ?" , 
+        "Which laptops should we buy?","Best laptops to buy ?"],
+      "responses": [
+        " If you are buying a laptop, give the most importance to build quality , keyboard should be backlit , It should not be too heavy , If you are not extensively into gaming, keep it below 1.8kg . P.S. You can buy the DOS version of the laptop and install Linux on it. Windows versions are slightly expensive. slight_smile"
+       ]
     },
     {
       "tag": "Internet",
       "patterns": [
         "Is there availability of internet on campus?",
         "How is the internet there?",
-        "Do we have good internet speed?"
+        "Do we have good internet speed?","Do we have wifi at campus ?","What is the speed of wifi ?"
       ],
       "responses": [
         "Yes. The Internet is pretty good in the Institute and is uncapped, i.e., unlimited hi-speed net at all times."
@@ -156,7 +204,7 @@ intents = {
       "tag": "hostel facilities",
       "patterns": [
         "What do we get in hostels?",
-        "10. What facilities are provided to the freshers for the purchase of hostel necessities like mattresses, pillows, buckets etc.?",
+        "What facilities are provided to the freshers for the purchase of hostel necessities like mattresses, pillows, buckets?",
         "What do we need to bring to the hostels?"
       ],
       "responses": [
@@ -164,15 +212,38 @@ intents = {
       ]
     },
     {
+      "tag":"creator",
+      "patterns": ["Who made you ?", "Who created you ?","Who is your GOD ?", "Who is your creator ?"],
+      "responses":["I am created by team CYBORG."]
+    },
+    {
       "tag": "people in hostel",
       "patterns": [
-        "How many people will stay in a hostel room?"
+        "How many people will stay in a hostel room?",
+        "Are there single occupied rooms for freshers ?",
+        "rooms for freshers"
       ],
       "responses": [
         "Hostels have rooms of different sizes, single, double and triple occupancy. First year students usually get a shared room."
       ]
     },
     {
+      "tag": "pickup center",
+      "patterns": [
+        "Can we order from Flipkart or Amazon or other online shopping websites in the campus?",
+        "Online shopping available in Mandi"],
+      "responses": [
+      "Yes we can order from several different apps and websites and order is delivered at the campus.",
+      "We can place order at a variety of online stores and it is delivered at the campus"]
+    },
+    { "tag": "dominos",
+      "patterns": [
+      "Is there Dominos in our campus ?","Is dominos or swiggy allowed in campus","Can we order food online ?"
+      ],
+      "responses": [
+        "No , this facilty is not allowed in campus although we have canteens from where can get anything at reasonable price inside the ca,pus itself "]}
+              
+    ,{
       "tag": "books",
       "patterns": [
         "Will we be buying books or we can get them from the library?",
@@ -183,7 +254,15 @@ intents = {
         "In general, you can get the e-books for the materials that the teacher specifies. Also, you can get them from the library."
       ]
     },
+    {"tag": "sim",
+     "patterns":["Which sim works in IIT Mandi ?","Which sim is recommended ?","Which sim network is best ?"],
+     "responses":["Airtel and Jio are the two most recommended ones."]},
     {
+        "tag":"fees",
+     "patterns":["What is the fee structure at IIT Mandi ?","What is the fees per semester ?","Is there fee concession for category students ?","Is there fee concession for female students ?"],
+     "responses":["please go to the detailed fee structure through this link (http://iitmandi.ac.in/academics/fees.php)."]
+     },
+     {
       "tag": "holidays",
       "patterns": [
         "What is the holiday schedule of IIT Mandi?",
@@ -231,6 +310,16 @@ intents = {
       ]
     },
     {
+      "tag": "transport facilities",
+      "patterns": [
+        "college facilities for transportation ", " movement from city to campus ","bus facilities","bus",
+        "How to go from north campus to south campus ?",
+        "What are the transportation facilities at IIT Mandi ?"
+      ],
+      "responses": [
+        "Continuous bus service is available from north campus to south campus and vice versa throughout the day.After every 15 min there is bus to go from one campus to another . We also have a bus going to city after every hour ."]
+    },
+    {
       "tag": "session start",
       "patterns": [
         "When is the session starting for first year B.Tech students?",
@@ -245,7 +334,7 @@ intents = {
       "tag": "Hangout",
       "patterns": [
         "What are the good places to hang out in Mandi town?",
-        "Where can we chill in Mandi?"
+        "Where can we chill in Mandi?" , "Where can we go to refresh ourselves in collegs ?"
       ],
       "responses": [
         "Mandi has a fairly good market, which can provide you with almost anything. Hotels like Raj Mahal, Regent Palms, Treat are good for dinners. Dominos, Raman Bakers, Sai Sweets have their share of fast food fanatics. Indira Market, built around a sunken lake, - the Mandi version of a super mall - is a delightful place for making little discoveries."
@@ -276,6 +365,8 @@ intents = {
     {
       "tag": "food",
       "patterns": [
+        "food",
+        "mess"
         "How is the mess food?",
         "Are there canteens?",
         "How many restaurants are there?",
@@ -298,11 +389,20 @@ intents = {
       ]
     },
     {
+      "tag": "swimming",
+      "patterns": [
+        "Is there a swimming pool ?",
+        "Is there a river ?" , "Are we allowed to go near river ?" 
+      ],
+      "responses": [
+        "The swimming pool will hopefully be available for everyone next time we reach the campus. We have uhl river flowing behind our hostels but it is not allowed to go near it for safety purposes. "]
+    },
+    {
       "tag": "wild animals",
       "patterns": [
         "Are there wild animals in IIT Mandi?",
         "Wild animals there?",
-        "Snakes?"
+        "Snakes?", "Leopards ?"
       ],
       "responses": [
         "The campus is safe. No incident involving wild animals has been reported so far."
@@ -312,7 +412,7 @@ intents = {
       "tag": "Unique activities",
       "patterns": [
         "What else can be done at IIT Mandi?",
-        "Unique activities?"
+        "Unique activities?","What not to miss at IIT Mandi ?"
       ],
       "responses": [
         "Due to its pristine location, students can enjoy hiking and trekking, mountain biking etc. We have active student clubs who coordinate these activities."
@@ -321,7 +421,7 @@ intents = {
     {
       "tag": "Placement",
       "patterns": [
-        "What are the placement statistics of IIT Mandi?",
+        "What are the placement statistics of college?",
         "What is the highest package?",
         "Placement scenario?"
 
@@ -396,6 +496,20 @@ intents = {
         "We at programming club do all sorts of cool stuff from competitive programming, development, AI and ML, and cybersecurity. We hold several events and sessions related to all these and they are free for anyone and everyone to enjoy!! check us out at: https://pc.iitmandi.co.in/"
       ]
     },
+    {"tag":"party",
+     "patterns": ["Will there be freshers party ?","Is there freshers party when we reach campus ?","Is there DJ night ?","Is there special party arranged for freshers ?"],
+     "responses":["Yes , a freshers party is arranged for freshers by the seniors at college."]},
+    {
+      "tag": "Coding",
+      "patterns": [
+        "What is the coding culture at IIT Mandi?",
+        "What is our position in coding compared to other new IITs",
+        "Coding in IIT MANDI","Coding"
+      ],
+      "responses": [
+        "IIT Mandi has a decent Coding Culture with many students being selected every year in ICPC and GSOC (IIT Mandi has rocked this year in GSoC selections 9 students + 6 mentors) although we have a room of improvement in ICPC, overall it will be a good experience and Open source culture is better at our college as shown by GSoC selections. Apart from the GSoC selections, many were also selected in Linux community bridge, which is an equally prestigious program."
+      ]
+    },
     {
       "tag": "basic programming",
       "patterns": [
@@ -461,6 +575,7 @@ intents = {
     {
       "tag": "RTE",
       "patterns": [
+        "sigsev"
         "My code is showing runtime error.",
         "What do we mean by a RTE?",
         "Why am I getting a SIGSEV?",
@@ -470,9 +585,82 @@ intents = {
       "responses": [
         "Check this out: https://www.geeksforgeeks.org/runtime-errors/"
       ]
+    },
+    {
+      "tag": "competitive programming",
+      "patterns": [
+        "What is competitive programming?",
+        "How to start with CP?",
+        "What is CP?",
+        "how to begin with CP?"
+      ],
+      "responses": [
+        "Check this out: https://www.geeksforgeeks.org/how-to-prepare-for-competitive-programming/. For more details, try asking some experienced seniors! They would be glad to help you out."
+      ]
+    },
+    {
+      "tag": "doubts",
+      "patterns": [
+        "Where should I ask doubts related to programming?",
+        "What should I do if I have a doubt?",
+        "Where can I get my doubts cleared?",
+        "Who can clear my doubts?"
+      ],
+      "responses": [
+        "I can try my best to help you. But still, if I'm unable to answer your doubts, you could always ask your seniors for help. They are really very generous and helpful! In fact, I'm learning from them too!"
+      ]
+    },
+    {
+      "tag": "practice",
+      "patterns": [
+        "Where should I practice problems?",
+        "From which sources should I practice for CP?",
+        "Can you tell a few sites for practice.",
+        "What should I do to improve competitive programming?"
+      ],
+      "responses": [
+        "Here are some good sites for practice: https://codeforces.com/, https://www.codechef.com/, https://www.hackerearth.com/practice/, https://atcoder.jp/. Practicing will help improve CP. Happy practicing!"
+      ]
+    },
+    {
+      "tag": "uri",
+      "patterns": [
+        "How to solve uri",
+        "Getting error in uri",
+        "uri",
+        "logic for uri"
+      ],
+      "responses": [
+        "Try working a little harder, and if you are still unable to resolve the issues, try asking a senior. They are really helpful."
+      ]
     }
   ]
 }
+
+import requests
+from requests.exceptions import HTTPError
+ 
+# https://api.stackexchange.com/docs/advanced-search
+
+def stack_api(query):
+
+  params = {'q': query, 'tagged': (), 'sort': 'relevance', 'page': '1', 'pagesize': '5', 'order': 'desc', 'site': 'stackoverflow'}
+  
+  try:
+      response = requests.get('https://api.stackexchange.com/2.2/search/advanced/', params=params)
+  
+      js = response.json()
+      
+      ret = []
+      for item in js['items']:
+          ret.append((item['title'], item['link']))
+      return ret
+  
+  except HTTPError as http_err:
+      return [('HTTP error occurred: ', http_err)]
+  
+  except Exception as err:
+      return [('Other error occurred: ', err)]
 
 import numpy as np
 import nltk
@@ -507,16 +695,20 @@ class NeuralNet(nn.Module):
     def __init__(self, input_size, hidden_size, num_classes):
         super(NeuralNet, self).__init__()
         self.l1 = nn.Linear(input_size, hidden_size) 
-        self.l2 = nn.Linear(hidden_size, hidden_size) 
-        self.l3 = nn.Linear(hidden_size, num_classes)
+        self.l2 = nn.Linear(hidden_size, hidden_size*2)
+        self.l3 = nn.Linear(hidden_size*2, hidden_size) 
+        self.l4 = nn.Linear(hidden_size, num_classes)
         self.relu = nn.ReLU()
+        self.tanh = nn.Tanh()
     
     def forward(self, x):
         out = self.l1(x)
         out = self.relu(out)
         out = self.l2(out)
-        out = self.relu(out)
+        out = self.tanh(out)
         out = self.l3(out)
+        out = self.relu(out)
+        out = self.l4(out)
         # no activation and no softmax at the end
         return out
 
@@ -654,14 +846,9 @@ model = NeuralNet(input_size, hidden_size, output_size).to(device)
 model.load_state_dict(model_state)
 model.eval()
 
-bot_name = "GCS-Bot"
-print("Let's chat! (type 'quit' to exit)")
-while True:
-    # sentence = "do you use credit cards?"
-    sentence = input("You: ")
-    if sentence == "quit":
-        break
-
+def chat(sentence):
+    sent = sentence # original sentence for stack_api
+    bot_name = "GCS-Bot"
     sentence = tokenize(sentence)
     X = bag_of_words(sentence, all_words)
     X = X.reshape(1, X.shape[0])
@@ -671,13 +858,28 @@ while True:
     _, predicted = torch.max(output, dim=1)
 
     tag = tags[predicted.item()]
-
     probs = torch.softmax(output, dim=1)
     prob = probs[0][predicted.item()]
     if prob.item() > 0.75:
         for intent in intents['intents']:
             if tag == intent["tag"]:
-                print(f"{bot_name}: {random.choice(intent['responses'])}")
+                return (f"{bot_name}: {random.choice(intent['responses'])}")
     else:
-        print(f"{bot_name}: I do not understand...")
-
+        #return (f"{bot_name}: I do not understand...")
+        stack_results = stack_api(sent)
+        top_results = 3 # no. of results you want to give
+        top_results = min(top_results, len(stack_results)) # to avoid out of bounds error
+        ret = f"Here's what I found on stack overflow: \n\n"
+        for i in range(top_results):
+          ret += f"{stack_results[i][0]}\n{stack_results[i][1]}\n\n"
+        if ret == None:
+          ret = ""
+        return ret
+"""
+while True:
+    # sentence = "do you use credit cards?"
+    sentence = input("You: ")
+    if sentence == "quit":
+        break
+    print(chat(sentence))
+"""
