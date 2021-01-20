@@ -43,3 +43,4 @@ Terms used:
 
 - **patterns** : All different queries that a user might enter are put in the "patterns".
 - **responses** : After interpreting the user’s query, the chatbot will have to reply to the query and this reply will be randomly selected from the set of predefined replies in **“responses”**
+- **tag** : groups a set of similar patterns and responses to a specific category so that it’ll be easier for the model to predict which category a particular pattern represents.
