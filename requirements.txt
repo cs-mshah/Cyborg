@@ -1,7 +1,7 @@
 APScheduler==3.6.3
 certifi==2022.12.7
 cffi==1.14.4
-cryptography==3.3.2
+cryptography==39.0.1
 decorator==4.4.2
 pycparser==2.20
 python-telegram-bot==13.1
