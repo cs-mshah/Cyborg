@@ -7,7 +7,7 @@ pycparser==2.20
 python-telegram-bot==13.1
 pytz==2020.5
 six==1.15.0
-tornado==6.1
+tornado==6.3.3
 tzlocal==2.1
 wincertstore==0.2
 tensorflow
